@@ -11,12 +11,10 @@ imbalanced-learn
 kaggle
 transformers
 datasets
-peft==0.9.0
+peft
 ml_collections
-sdmetrics==0.11.1
+sdmetrics
 prdc
 rdt
 openpyxl
 xgboost
-pydantic
-einops

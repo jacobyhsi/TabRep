@@ -5,7 +5,7 @@ Official Implementation of the Paper - TabRep: Training Tabular Diffusion Models
 
 Clone this repository and navigate to it in your terminal.
 
-Create an environment using a preferred package manager. We provide installation instructions for Conda and UV. We recommend using UV to save time. Before installation, ```cd``` into the ```tabrep_main``` directory. This environment can be used for everything apart from ```eval_quality```:
+Create an environment using a preferred package manager. We provide installation instructions for Conda and UV. We recommend using UV to save time. This environment can be used for everything apart from ```eval_quality```:
 
 Conda Installation:
 ```
