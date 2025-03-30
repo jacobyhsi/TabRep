@@ -1,0 +1,38 @@
+{
+    "name": "stroke",
+    "task_type": "binclass",
+    "header": "infer",
+    "column_names": [
+        "gender",
+        "age",
+        "hypertension",
+        "heart_disease",
+        "ever_married",
+        "work_type",
+        "Residence_type",
+        "avg_glucose_level",
+        "bmi",
+        "smoking_status",
+        "stroke"
+    ],
+    "num_col_idx": [
+        1,
+        7,
+        8
+    ],
+    "cat_col_idx": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9
+    ],
+    "target_col_idx": [
+        10
+    ],
+    "file_type": "csv",
+    "data_path": "data/stroke/healthcare-dataset-stroke-data.csv",
+    "test_path": null
+}
