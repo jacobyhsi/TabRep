@@ -1,5 +1,4 @@
 # TabRep: Training Tabular Diffusion Models with a Simple and Effective Continuous Representation
-Official Implementation of the Paper - TabRep: Training Tabular Diffusion Models with a Simple and Effective Continuous Representation
 
 ## Environment
 
