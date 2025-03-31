@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import os
-import sys
+import shutil
 import json
 import argparse
 
@@ -89,20 +89,27 @@ def preprocess_stroke():
 def preprocess_diabetes():
     with open(f'{INFO_PATH}/diabetes.json', 'r') as f:
         info = json.load(f)
+
+    original_path = 'data/diabetes/diabetic_data.csv'
+    backup_path = 'data/diabetes/diabetic_data_og.csv'
+
+    if not os.path.exists(backup_path):
+        # print("Creating a backup copy of the original diabetes dataset...")
+        shutil.copy(original_path, backup_path)
     
-    all_cols = pd.read_csv('data/diabetes/diabetic_data.csv', nrows=1).columns.tolist()
+    all_cols = pd.read_csv('data/diabetes/diabetic_data_og.csv', nrows=1).columns.tolist()
     used_cols = [col for col in all_cols if col != 'payer_code']
 
     data_df = pd.read_csv(
-        'data/diabetes/diabetic_data.csv',
+        'data/diabetes/diabetic_data_og.csv',
         usecols=used_cols,
         na_values=['?']
     )
     
     missing_percentage = data_df.isnull().mean() * 100
     sorted_missing_percentage = missing_percentage[missing_percentage > 0].sort_values(ascending=False)
-    print("Column-wise Missing Feature Percentage (Sorted):")
-    print(sorted_missing_percentage)
+    # print("Column-wise Missing Feature Percentage (Sorted):")
+    # print(sorted_missing_percentage)
     
     # Specify columns to drop based on missing percentages
     columns_to_drop = [
@@ -128,7 +135,7 @@ def preprocess_diabetes():
         'diag_3',
     ]
 
-    print(f"Columns to drop: {columns_to_drop}")
+    # print(f"Columns to drop: {columns_to_drop}")
     
     data_df = data_df.drop(columns=columns_to_drop)
     data_df = data_df.dropna()
@@ -138,12 +145,12 @@ def preprocess_diabetes():
     data_df = data_df[data_df['miglitol'].isin(data_df['miglitol'].value_counts()[data_df['miglitol'].value_counts() >= 30].index)]
     data_df = data_df[data_df['acarbose'].isin(data_df['acarbose'].value_counts()[data_df['acarbose'].value_counts() >= 10].index)]
     
-    for column in data_df.columns:
-        print(f"Feature: {column}")
-        print(data_df[column].value_counts())
-        print("-" * 50)  # Separator for readability
+    # for column in data_df.columns:
+    #     print(f"Feature: {column}")
+    #     print(data_df[column].value_counts())
+    #     print("-" * 50)  # Separator for readability
         
-    print(data_df.shape)
+    # print(data_df.shape)
     
     data_df.to_csv(info['data_path'], index = False)
     
@@ -193,7 +200,7 @@ def train_val_test_split(data_df, cat_columns, num_train = 0, num_test = 0):
     seed = 1234
 
     while True:
-        print(f"testing seed {seed}")
+        # print(f"testing seed {seed}")
         np.random.seed(seed)
         np.random.shuffle(idx)
 
@@ -294,7 +301,7 @@ def process_data(name):
 
     train_df.columns = range(len(train_df.columns))
     test_df.columns = range(len(test_df.columns))
-    print(num_data)
+    # print(num_data)
     print("name, data_df.shape, train_df.shape, test_df.shape, data_df.shape")
     print(name, data_df.shape, train_df.shape, test_df.shape, data_df.shape)
 
@@ -438,6 +445,6 @@ if __name__ == "__main__":
     if args.dataname:
         process_data(args.dataname)
     else:
-        for name in ['adult', 'default', 'shoppers', 'beijing', 'news', 'stroke', 'diabetes']:
-        # for name in ['shoppers']:
+        for name in ['diabetes']:
+        # for name in ['adult', 'default', 'shoppers', 'beijing', 'news', 'stroke', 'diabetes']:
             process_data(name)

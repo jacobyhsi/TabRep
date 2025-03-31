@@ -19,7 +19,6 @@ NAME_URL_DICT_UCI = {
     'shoppers': 'https://archive.ics.uci.edu/static/public/468/online+shoppers+purchasing+intention+dataset.zip',
     'beijing': 'https://archive.ics.uci.edu/static/public/381/beijing+pm2+5+data.zip',
     'news': 'https://archive.ics.uci.edu/static/public/332/online+news+popularity.zip',
-    'bank': 'https://archive.ics.uci.edu/static/public/222/bank+marketing.zip',
     'diabetes': 'https://archive.ics.uci.edu/static/public/296/diabetes+130-us+hospitals+for+years+1999-2008.zip'
 }
 
