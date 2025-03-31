@@ -33,38 +33,6 @@ def preprocess_beijing():
     df_cleaned = data_df.dropna()
     df_cleaned.to_csv(info['data_path'], index = False)
 
-def preprocess_beijing_ordinal():
-    with open(f'{INFO_PATH}/beijing_ordinal.json', 'r') as f:
-        info = json.load(f)
-    
-    data_path = info['raw_data_path']
-
-    data_df = pd.read_csv(data_path)
-    columns = data_df.columns
-
-    data_df = data_df[columns[1:]]
-    data_df = data_df.drop(['month', 'day', 'hour', 'cbwd'], axis=1)
-
-    df_cleaned = data_df.dropna()
-
-    df_cleaned.to_csv(info['data_path'], index = False)
-
-def preprocess_beijing_cyclical():
-    with open(f'{INFO_PATH}/beijing_cyclical.json', 'r') as f:
-        info = json.load(f)
-    
-    data_path = info['raw_data_path']
-
-    data_df = pd.read_csv(data_path)
-    columns = data_df.columns
-
-    data_df = data_df[columns[1:]]
-    data_df = data_df.drop(['year', 'cbwd'], axis=1)
-
-    df_cleaned = data_df.dropna()
-
-    df_cleaned.to_csv(info['data_path'], index = False)
-
 def preprocess_news():
     with open(f'{INFO_PATH}/news.json', 'r') as f:
         info = json.load(f)
@@ -116,75 +84,6 @@ def preprocess_stroke():
 
     df_cleaned = data_df.dropna()
     df_cleaned.to_csv(info['data_path'], index = False)
-    
-    
-# def preprocess_diabetes():
-#     with open(f'{INFO_PATH}/diabetes.json', 'r') as f:
-#         info = json.load(f)
-        
-#     data = pd.read_csv('data/diabetes/diabetic_data_og.csv', na_values=['?'])
-    
-#     drop_list = ['examide' , 'citoglipton', 'weight','encounter_id','patient_nbr','payer_code','medical_specialty']  
-#     data.drop(drop_list,axis=1, inplace=True)
-#     data['gender'] = data['gender'].replace('Unknown/Invalid', pd.NA)
-#     data.dropna(subset=['gender'], how='all', inplace = True)
-#     data["race"] = data["race"].fillna(data["race"].mode()[0])
-#     diag_list = ['diag_1','diag_2','diag_3']
-#     for col in diag_list:
-#         data[col] = data[col].fillna('NaN')
-#     import re
-#     def transformFunc(value):
-#         value = re.sub("V[0-9]*", "0", value) # V 
-#         value = re.sub("E[0-9]*", "0", value) # E 
-#         value = re.sub('NaN', "-1", value) # Nan 
-#         return value
-#     def transformCategory(value):
-#         if value>=390 and value<=459 or value==785:
-#             category = 'Circulatory'
-#         elif value>=460 and value<=519 or value==786:
-#             category = 'Respiratory'
-#         elif value>=520 and value<=579 or value==787:
-#             category = 'Digestive'
-#         elif value==250:
-#             category = 'Diabetes'
-#         elif value>=800 and value<=999:
-#             category = 'Injury'          
-#         elif value>=710 and value<=739:
-#             category = 'Musculoskeletal'   
-#         elif value>=580 and value<=629 or value==788:
-#             category = 'Genitourinary'
-#         elif value>=140 and value<=239 :
-#             category = 'Neoplasms'
-#         elif value==-1:
-#             category = 'NAN'
-#         else :
-#             category = 'Other'
-#         return category
-#     for col in diag_list:
-#         data[col] = data[col].apply(transformFunc)
-#         data[col] = data[col].astype(float)
-#     for col in diag_list:
-#         data[col] = data[col].apply(transformCategory)
-        
-#     drugs = ['metformin', 'repaglinide', 'nateglinide', 'chlorpropamide', 'glimepiride', 'glipizide', 'glyburide', 'pioglitazone',
-#         'rosiglitazone', 'acarbose', 'miglitol', 'insulin', 'glyburide-metformin', 'tolazamide', 'metformin-pioglitazone',
-#         'metformin-rosiglitazone', 'glimepiride-pioglitazone', 'glipizide-metformin', 'troglitazone', 'tolbutamide', 'acetohexamide']
-
-#     for col in drugs:
-#         data[col] = data[col].replace(['No','Steady','Up','Down'],[0,1,1,1])
-#         data[col] = data[col].astype(int)
-        
-#     data['A1Cresult'] = data['A1Cresult'].replace(['>7','>8','Norm','None'],[1,1,0,-99])
-#     data['max_glu_serum'] = data['max_glu_serum'].replace(['>200','>300','Norm','None'],[1,1,0,-99])
-    
-#     for column in data.columns:
-#         print(f"Feature: {column}")
-#         print(data[column].value_counts())
-#         print("-" * 50)  # Separator for readability
-        
-#     print(len(data.columns))
-    
-#     data.to_csv(info['data_path'], index = False)
     
     
 def preprocess_diabetes():
@@ -330,10 +229,6 @@ def process_data(name):
         preprocess_stroke()
     elif name == 'diabetes':
         preprocess_diabetes()
-    elif name == 'beijing_ordinal':
-        preprocess_beijing_ordinal()
-    elif name == 'beijing_cyclical':
-        preprocess_beijing_cyclical()
 
     with open(f'{INFO_PATH}/{name}.json', 'r') as f:
         info = json.load(f)
