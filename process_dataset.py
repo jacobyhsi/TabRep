@@ -90,11 +90,11 @@ def preprocess_diabetes():
     with open(f'{INFO_PATH}/diabetes.json', 'r') as f:
         info = json.load(f)
     
-    all_cols = pd.read_csv('data/diabetes/diabetic_data_og.csv', nrows=1).columns.tolist()
+    all_cols = pd.read_csv('data/diabetes/diabetic_data.csv', nrows=1).columns.tolist()
     used_cols = [col for col in all_cols if col != 'payer_code']
 
     data_df = pd.read_csv(
-        'data/diabetes/diabetic_data_og.csv',
+        'data/diabetes/diabetic_data.csv',
         usecols=used_cols,
         na_values=['?']
     )
