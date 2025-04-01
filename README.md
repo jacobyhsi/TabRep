@@ -1,6 +1,12 @@
 # TabRep: Training Tabular Diffusion Models with a Simple and Effective Continuous Representation
 
-## Environment
+This repo contains the PyTorch implementation of the paper "TabRep: Training Tabular Diffusion Models with a Simple and Effective Continuous Representation".
+
+by [Jacob Si](https://jacobyhsi.github.io/), [Zijing Ou](https://j-zin.github.io/), [Mike Qu](https://mikequ1.github.io/), [Zhengrui Xiang](https://tecai.github.io/about/), and [Yingzhen Li](http://yingzhenli.net/home/en/).
+
+## Installation
+
+Our implementation is built upon [TabSYN's](https://github.com/amazon-science/tabsyn) repository. The following indicates the installation instructions.
 
 Clone this repository and navigate to it in your terminal.
 
