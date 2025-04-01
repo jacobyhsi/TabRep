@@ -120,7 +120,7 @@ python main.py --dataname adult --method tabrep_flow --mode sample
 
 Evaluation:
 
-We include Machine Learning Efficiency, Density Estimation (Pair-wise Column Correlation/Column Density Estimation), Quality ($\alpha$-precision, $\beta$-recall), Detection (Classifier Two Sample Test), and Privacy Preservation (Membership Inference Attacks) benchmarks to evaluate the models.
+We include Machine Learning Efficiency (AUC, RMSE, F1 Scores), Density Estimation (Pair-Wise Column Correlation/Column Density Estimation), Quality ($\alpha$-precision, $\beta$-recall), Detection (Classifier Two Sample Test), and Privacy Preservation (Membership Inference Attacks) benchmarks to evaluate the models.
 
 ```
 python eval/eval_mle.py --dataname [NAME_OF_DATASET] --model [NAME_OF_BASELINE_METHODS] --path [PATH_TO_SYNTHETIC_DATA]
