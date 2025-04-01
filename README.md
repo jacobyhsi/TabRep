@@ -6,7 +6,7 @@ by [Jacob Si](https://jacobyhsi.github.io/), [Zijing Ou](https://j-zin.github.io
 
 ## Installation
 
-Our implementation is built upon [TabSYN's](https://github.com/amazon-science/tabsyn) repository. The following indicates the installation instructions.
+Our implementation is built upon [TabSYN's](https://github.com/amazon-science/tabsyn) repository. The following delineates the installation instructions.
 
 Clone this repository and navigate to it in your terminal.
 
