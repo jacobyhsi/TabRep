@@ -11,7 +11,7 @@ by [Jacob Si](https://jacobyhsi.github.io/), [Zijing Ou](https://j-zin.github.io
 
 <div align="center">
   <img src="imgs/tabrep_algorithm.png" alt="Model Logo" width="800" style="margin-left:'auto' margin-right:'auto' display:'block'"/>
-  <p><em>Figure 2: TabRep Algorithm.</em>
+  <p><em>Figure 2: TabRep Training and Sampling Algorithms.</em>
 </div>
 
 ## Installation
