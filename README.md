@@ -5,7 +5,7 @@ This repo contains the PyTorch implementation of the paper "TabRep: Training Tab
 by [Jacob Si](https://jacobyhsi.github.io/), [Zijing Ou](https://j-zin.github.io/), [Mike Qu](https://mikequ1.github.io/), [Zhengrui Xiang](https://tecai.github.io/about/), and [Yingzhen Li](http://yingzhenli.net/home/en/).
 
 <div align="center">
-  <img src="imgs/tabrep_architecture.pdf" alt="Model Logo" width="800" style="margin-left:'auto' margin-right:'auto' display:'block'"/>
+  <img src="imgs/tabrep_architecture.png" alt="Model Logo" width="800" style="margin-left:'auto' margin-right:'auto' display:'block'"/>
   <p><em>Figure 1: The TabRep Architecture.</em>
 </div>
 
