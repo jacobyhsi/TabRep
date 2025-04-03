@@ -18,3 +18,4 @@ prdc
 rdt
 openpyxl
 xgboost
+syntheval
