@@ -130,7 +130,7 @@ Evaluation:
 
 We include Machine Learning Efficiency (AUC, RMSE, F1 Scores), Density Estimation (Pair-Wise Column Correlation/Column Density Estimation), Quality ($\alpha$-precision, $\beta$-recall), Detection (Classifier Two Sample Test), and Privacy Preservation (Membership Inference Attacks) benchmarks to evaluate the models.
 
-For ```eval_privacy.py```, an extra step is required to setup the package. Within the ```syntheval``` pip installation in the original ```tabrep``` environment (i.e. ```python3.10/site-packages/syntheval/presets```), create a new ```mia.json``` file and insert the following:
+For ```eval_privacy.py```, an extra step is required to setup the package. Within the ```syntheval``` pip installation in the original ```tabrep``` environment (i.e. ```python3.10/site-packages/syntheval/presets```), create a new ```mia.json``` file and write the following:
 
 ```
 {
