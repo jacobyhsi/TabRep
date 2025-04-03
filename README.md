@@ -18,7 +18,7 @@ Our implementation is built upon [TabSYN's](https://github.com/amazon-science/ta
 
 Clone this repository and navigate to it in your terminal.
 
-Create an environment using a preferred package manager. We provide installation instructions for Conda and UV. We recommend using UV to save time. This environment can be used for everything apart from ```eval_quality```:
+Create an environment using a preferred package manager. We provide installation instructions for Conda and UV. We recommend using [UV](https://docs.astral.sh/uv/getting-started/installation/) to for faster installation. This environment can be used for everything apart from ```eval_quality```:
 
 Conda Installation:
 ```
