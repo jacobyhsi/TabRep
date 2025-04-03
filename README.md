@@ -138,6 +138,8 @@ For ```eval_privacy.py```, an extra step is required to setup the package. Withi
 }
 ```
 
+Then evaluate as follows:
+
 ```
 python eval/eval_mle.py --dataname [NAME_OF_DATASET] --model [NAME_OF_BASELINE_METHODS] --path [PATH_TO_SYNTHETIC_DATA]
 python eval/eval_density.py --dataname [NAME_OF_DATASET] --model [METHOD_NAME] --path [PATH_TO_SYNTHETIC_DATA]
