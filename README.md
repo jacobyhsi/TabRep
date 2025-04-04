@@ -151,3 +151,7 @@ python eval/eval_privacy.py --dataname [NAME_OF_DATASET] --model [METHOD_NAME] -
 python eval/eval_mle.py --dataname beijing --model tabrep_ddpm --path synthetic/beijing/tabrep_ddpm.csv
 python eval/eval_mle.py --dataname beijing --model tabrep_flow --path synthetic/beijing/tabrep_flow.csv
 ```
+
+## Citation
+
+Please consider citing our paper if you find it helpful. Thank you :grinning:!
