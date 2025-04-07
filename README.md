@@ -87,14 +87,18 @@ Download baseline datasets and run them within the ```tabrep_main``` directory a
 python download_dataset.py
 python process_dataset.py
 ```
-The following datasets are included:
+Classification Datasets:
 - **Adult**: https://archive.ics.uci.edu/dataset/2/adult
-- **Beijing** PM2.5: https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data
 - **Default** of Credit Card Clients: https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
 - **Stroke** Prediction: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
+- **Shoppers** Purchasing Intention: https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset
+
+Multi-Classification Dataset:
 - **Diabetes** Readmissions: https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008
-- Online **Shoppers** Purchasing Intention: https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset
-- Online **News** Popularity: https://archive.ics.uci.edu/dataset/332/online+news+popularity
+
+Regression Datasets
+- **Beijing** PM2.5: https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data
+- **News** Popularity: https://archive.ics.uci.edu/dataset/332/online+news+popularity
 
 As Kaggle requires user log-on, the **Stroke** should be downloaded manually. \
 To process Kaggle datasets:
