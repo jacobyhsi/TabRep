@@ -100,7 +100,8 @@ Regression Datasets
 - **Beijing** PM2.5: https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data
 - **News** Popularity: https://archive.ics.uci.edu/dataset/332/online+news+popularity
 
-As Kaggle requires user log-on, the **Stroke** should be downloaded manually. \
+As Kaggle requires user log-on, the **Stroke** dataset should be downloaded manually.
+
 To process Kaggle datasets:
 ```
 cd data
