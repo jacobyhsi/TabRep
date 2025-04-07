@@ -87,16 +87,16 @@ Download baseline datasets and run them within the ```tabrep_main``` directory a
 python download_dataset.py
 python process_dataset.py
 ```
-Classification Datasets:
+Classification:
 - **Adult**: https://archive.ics.uci.edu/dataset/2/adult
 - **Default** of Credit Card Clients: https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
 - **Stroke** Prediction: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 - **Shoppers** Purchasing Intention: https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset
 
-Multi-Classification Dataset:
+Multi-Classification:
 - **Diabetes** Readmissions: https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008
 
-Regression Datasets
+Regression:
 - **Beijing** PM2.5: https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data
 - **News** Popularity: https://archive.ics.uci.edu/dataset/332/online+news+popularity
 
