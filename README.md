@@ -92,7 +92,7 @@ Classification:
 - **Stroke** Prediction: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 - **Shoppers** Purchasing Intention: https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset
 
-Multi-Classification:
+Multiclass-Classification:
 - **Diabetes** Readmissions: https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008
 
 Regression:
