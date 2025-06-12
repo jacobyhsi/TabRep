@@ -80,7 +80,6 @@ uv pip install --upgrade pip
 
 ## Datasets
 
-### Baseline Datasets
 Download baseline datasets and run them within the ```tabrep_main``` directory as follows:
 ```
 python download_dataset.py
