@@ -158,3 +158,10 @@ python eval/eval_mle.py --dataname beijing --model tabrep_flow --path synthetic/
 ## Citation
 
 Please consider citing our paper if you find it helpful. Thank you :grinning:!
+
+@article{si2025tabrep,
+  title={TabRep: Training Tabular Diffusion Models with a Simple and Effective Continuous Representation},
+  author={Si, Jacob and Ou, Zijing and Qu, Mike and Xiang, Zhengrui and Li, Yingzhen},
+  journal={arXiv preprint arXiv:2504.04798},
+  year={2025}
+}
