@@ -32,8 +32,8 @@ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -
 
 UV Installation:
 ```
-uv venv tabrep --python 3.10 --seed
-source tabrep/bin/activate
+uv venv --python 3.10
+source .venv/bin/activate
 uv pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
 uv pip install -r requirements.txt
 uv pip install dgl -f https://data.dgl.ai/wheels/cu117/repo.html
