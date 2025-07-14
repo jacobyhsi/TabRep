@@ -111,7 +111,11 @@ python process_dataset.py [dataname]
 
 ## Training, Sampling and Evaluation
 
-We include the following baseline methods: `codi`, `ctgan`, `goggle`, `great`, `smote`, `stasy`, `tabddpm`, `tabsyn`
+We include the following baseline methods and datasets: 
+
+Baselines: `codi`, `ctgan`, `goggle`, `great`, `smote`, `stasy`, `tabddpm`, `tabsyn`
+
+Datasets: `adult`, `default`, `stroke`, `shoppers`, `diabetes`, `beijing`, `news`
 
 Training:
 ```
