@@ -111,6 +111,8 @@ python process_dataset.py [dataname]
 
 ## Training, Sampling and Evaluation
 
+We include the following baseline methods: `codi`, `ctgan`, `goggle`, `great`, `smote`, `stasy`, `tabddpm`, `tabsyn`
+
 Training:
 ```
 python main.py --dataname [NAME_OF_DATASET] --method [NAME_OF_BASELINE_METHODS] --mode train
