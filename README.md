@@ -163,7 +163,7 @@ python eval/eval_mle.py --dataname beijing --model tabrep_flow --path synthetic/
 
 ## Citation
 
-Please consider citing our paper if you find it helpful. Thank you :grinning:!
+Please consider citing our paper and giving it a :star2: if you find it helpful. Thank you :grinning:!
 
 ```
 @article{si2025tabrep,
