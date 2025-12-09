@@ -4,7 +4,7 @@
 <div>
     <a href="https://jacobyhsi.github.io/" target="_blank">Jacob Si</a> | 
     <a href="https://j-zin.github.io/" target="_blank">Zijing Ou</a><sup>*</sup> | 
-    <a href="https://mikequ1.github.io/" target="_blank">Mike Qu</a><sup>*</sup> | 
+    <a href="https://www.linkedin.com/in/mikequ1/" target="_blank">Mike Qu</a><sup>*</sup> | 
     <a href="https://tecai.github.io/about/" target="_blank">Zhengrui Xiang</a><sup>*</sup> |
     <a href="http://yingzhenli.net/home/en/" target="_blank">Yingzhen Li</a>
 </div>
