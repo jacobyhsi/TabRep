@@ -1,5 +1,24 @@
 # TabRep: Training Tabular Diffusion Models with a Simple and Effective Continuous Representation
-> by [Jacob Si](https://jacobyhsi.github.io/), [Zijing Ou](https://j-zin.github.io/)\*, [Mike Qu](https://mikequ1.github.io/)\*, [Zhengrui Xiang](https://tecai.github.io/about/)\*, and [Yingzhen Li](http://yingzhenli.net/home/en/).
+
+<div align="center">
+<div>
+    <a href="https://jacobyhsi.github.io/" target="_blank">Jacob Si</a> | 
+    <a href="https://j-zin.github.io/" target="_blank">Zijing Ou</a><sup>*</sup> | 
+    <a href="https://mikequ1.github.io/" target="_blank">Mike Qu</a><sup>*</sup> | 
+    <a href="https://tecai.github.io/about/" target="_blank">Zhengrui Xiang</a><sup>*</sup> |
+    <a href="http://yingzhenli.net/home/en/" target="_blank">Yingzhen Li</a>
+</div>
+<br>
+<div>
+    Imperial College London
+</div>
+<br>
+</div>
+
+<p align="center">
+<a href="https://arxiv.org/abs/2504.04798"><img src="https://img.shields.io/badge/arXiv-2504.04798-b31b1b.svg?logo=arxiv&logoColor=red" alt="TabRAG on arXiv"/></a>
+<a href="https://github.com/jacobyhsi/TabRep/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"></a>
+</p>
 
 <div align="center">
   <img src="imgs/tabrep_architecture.png" alt="Model Logo" width="800" style="margin-left:'auto' margin-right:'auto' display:'block'"/>
