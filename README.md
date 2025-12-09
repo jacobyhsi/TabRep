@@ -2,15 +2,18 @@
 
 <div align="center">
 <div>
-    <a href="https://jacobyhsi.github.io/" target="_blank">Jacob Si</a> | 
-    <a href="https://j-zin.github.io/" target="_blank">Zijing Ou</a><sup>*</sup> | 
-    <a href="https://www.linkedin.com/in/mikequ1/" target="_blank">Mike Qu</a><sup>*</sup> | 
-    <a href="https://tecai.github.io/about/" target="_blank">Zhengrui Xiang</a><sup>*</sup> |
-    <a href="http://yingzhenli.net/home/en/" target="_blank">Yingzhen Li</a>
+    <a href="https://jacobyhsi.github.io/" target="_blank">Jacob Si</a><sup>1</sup> | 
+    <a href="https://j-zin.github.io/" target="_blank">Zijing Ou</a><sup>1*</sup> | 
+    <a href="https://www.linkedin.com/in/mikequ1/" target="_blank">Mike Qu</a><sup>2*</sup> | 
+    <a href="https://tecai.github.io/about/" target="_blank">Zhengrui Xiang</a><sup>1*</sup> |
+    <a href="http://yingzhenli.net/home/en/" target="_blank">Yingzhen Li</a><sup>1</sup>
 </div>
 <br>
 <div>
-    Imperial College London
+    Imperial College London<sup>1</sup>
+</div>
+<div>
+    Columbia University<sup>2</sup>
 </div>
 <br>
 </div>
